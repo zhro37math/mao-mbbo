@@ -851,10 +851,10 @@ if __name__ == '__main__':
         avg_simple[1] /= Gen/2
         avg_complex[1] /= Gen/2
         data = createJSON(data, avg_scale, avg_simple, avg_complex, avg_safe_simple, avg_safe_complex)
-    ## 4. 记录data用于前端数据可视化
-    with open('.//viz//contrast-addtion-{}-demo.json'.format(datetime.datetime.now()),'w') as f:
-        f.flush()
-        json.dump(data, f, indent=2)
+        ## 4. 记录data用于前端数据可视化
+        with open('.//viz//contrast-addtion-{}-demo.json'.format(datetime.datetime.now()),'w') as f:
+            f.flush()
+            json.dump(data, f, indent=2)
 
 
 
